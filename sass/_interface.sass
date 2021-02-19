@@ -1,0 +1,86 @@
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    
+a, input, textarea, button 
+    &:active, &:hover, &:focus,
+        outline: 0
+        outline-offset: 0
+ul
+    list-style-type: none
+
+body
+    +reg
+    color: $text-color
+img
+    max-width: 100%
+a
+    text-decoration: none
+    color: $text-color
+    &:hover
+        color: $link-color
+h1
+    +bold
+    font-size: 45px
+
+h3, h4 
+    +bold
+h2
+    display: inline-block
+    font-size: 35px
+    border-bottom: 1px solid $decoration-color
+    margin-bottom: 50px
+    +bold
+.container
+    max-width: 1230px
+    padding: 0 15px
+    margin: auto
+.button-transparent
+    color: $link-color
+    border: 1px solid $link-color
+    letter-spacing: 0.5px
+    width: 156px
+    height: 35px
+    font-size: 14px
+    background-color: rgba(0,0,0,0)
+    transition: 0.3s
+    cursor: pointer
+    font-family: 'Inter', sans-serif
+    &:hover
+        border: 1px solid rgba(0,0,0,0)
+        background-color: $link-color
+        color: #fff
+.button
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: 'Inter', sans-serif
+    width: 282px
+    height: 56px
+    font-size: 17px
+    border: none
+    background: linear-gradient(180deg, #FFD05E 0%, #FFC029 100%)
+    cursor: pointer
+    &:hover
+        color: $text-color
+        background: linear-gradient(180deg, #FFD05E 0%, #F3B51D 100%)
+.top-box
+    display: block
+    width: 100%
+    height: 90px
+.breadcrumbs
+    margin-bottom: 54px
+    ul 
+        font-size: 13px
+        display: flex
+        li
+            margin-right: 20px
+            position: relative
+            &::after
+                position: absolute
+                right: -15px
+                content: '\003E'
+            &:last-child:after
+                display: none
+                

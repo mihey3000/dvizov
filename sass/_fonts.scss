@@ -1,0 +1,10 @@
+
+@mixin bold {
+    font-family: 'Old Standard TT', serif;
+    font-weight: 700;
+}
+
+@mixin reg {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
